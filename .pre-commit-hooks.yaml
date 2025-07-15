@@ -1,0 +1,8 @@
+-   id: gitprefix
+    name: Git Prefix
+    description: Prefix commit messages with issue/branch information
+    entry: prefix.sh
+    language: script
+    stages: [prepare-commit-msg]
+    pass_filenames: false
+    args: [.git/COMMIT_EDITMSG]
